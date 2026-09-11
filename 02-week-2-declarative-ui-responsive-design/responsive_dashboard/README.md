@@ -16,7 +16,7 @@
 Sebelum dashboard responsif, latih dulu widget dasar dengan membuat kartu profil sederhana. Buat project baru atau ganti sementara isi lib/main.dart:
 
 ![Langkah](screenshot/1.png)
-![Langkah](screenshot/2.png)
+![Langkah](screenshot/2.jpeg)
 
 ## Praktikum: dashboard responsif
 # Menyiapkan project
@@ -24,31 +24,31 @@ Sebelum dashboard responsif, latih dulu widget dasar dengan membuat kartu profil
 ![Langkah](screenshot/3.png)
 ![Langkah](screenshot/4.png)
 ![Langkah](screenshot/5.png)
-![Langkah](screenshot/6.png)
+![Langkah](screenshot/6.jpeg)
 <br>
 Buka lib/main.dart. Buat aplikasi profil sederhana berikut, lalu jalankan pada emulator atau perangkat fisik.<br>
 ![Langkah](screenshot/7.png)
-![Langkah](screenshot/8.png)
+![Langkah](screenshot/8.jpeg)
 <br>
 
 # Menambahkan interaksi: StatefulWidget dan Cupertino <br>
 Sejauh ini dashboard masih StatelessWidget. Ubah DashboardApp menjadi StatefulWidget dan tambahkan CupertinoSwitch (widget Cupertino) pada AppBar untuk mengganti tema secara manual — sekaligus membedakan komponen Material dan Cupertino secara langsung:<br>
 ![Langkah](screenshot/9.png)
 ![Langkah](screenshot/10.png)
-![Langkah](screenshot/11.png)
+![Langkah](screenshot/11.jpeg)
 <br>
 
 # Eksperimen layout
 1. Ubah breakpoint dari 700 menjadi nilai lain dan amati perubahan jumlah kolom.<br>
 ![Langkah](screenshot/12.png)
-![Langkah](screenshot/13.png)
+![Langkah](screenshot/13.jpeg)
 <br>
 2. Ubah themeMode menjadi ThemeMode.dark, lalu kembalikan ke ThemeMode.system.<br>
 ![Langkah](screenshot/14.png)
-![Langkah](screenshot/15.png)
+![Langkah](screenshot/15.jpeg)
 <br>
 3. Uji aplikasi dengan ukuran layar emulator yang berbeda.<br>
-![Langkah](screenshot/16.png)
+![Langkah](screenshot/16.jpeg)
 <br>
 4. Tambahkan Semantics atau label yang bermakna pada elemen yang penting bagi screen reader.<br>
 ![Langkah](screenshot/17.png)
@@ -142,13 +142,13 @@ Setelah tugas utama berjalan, rapikan kode Anda:<br>
 
 1. Ekstrak kartu informasi menjadi widget reusable (misal InfoCard) yang menerima title dan value, sehingga tidak ada duplikasi widget.<br>
 ![Langkah](screenshot/18.png)
-![Langkah](screenshot/19.png)
-![Langkah](screenshot/20.png)
+![Langkah](screenshot/19.jpeg)
+![Langkah](screenshot/20.jpeg)
 <br>
 2. Ganti warna dan ukuran yang di-hardcode dengan Theme.of(context) agar mengikuti tema terang/gelap secara otomatis.<br>
 ![Langkah](screenshot/21.png)
-![Langkah](screenshot/22.png)
-![Langkah](screenshot/23.png)
+![Langkah](screenshot/22.jpeg)
+![Langkah](screenshot/23.jpeg)
 <br>
 3. Pindahkan breakpoint ke satu konstanta bernama (misal const kWideBreakpoint = 700;) agar hanya didefinisikan satu kali.<br>
 ![Langkah](screenshot/24.png)
