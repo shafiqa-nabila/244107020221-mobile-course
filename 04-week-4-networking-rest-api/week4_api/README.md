@@ -116,3 +116,20 @@ Sebelum kode AI diterima, verifikasi hal berikut dan catat temuan Anda di README
 
 # Testing: unit test model + mock repository
 - ![Langkah](screenshot/28.png)
+- ![Langkah](screenshot/29.png)
+
+## Mini project / Industry Challenge
+1. Ambil data dari API dummy (JSONPlaceholder /posts atau API publik lain tanpa key). Tampilkan ke UI melalui repository + Riverpod.
+2. Terapkan Dio terpusat (base URL, timeout, interceptor logging) dan model fromJson aman null.
+3. Tampilkan keempat state: loading, error (+ tombol retry), empty, success.
+4. Tambahkan pagination dasar (infinite scroll, 10 item per halaman) dengan guard request ganda.
+5. Sertakan minimal 2 test yang lulus (1 unit test model/error mapping + 1 test provider dengan repository palsu).
+
+6. Kerjakan bagian AI Challenge dan dokumentasikan prompt, hasil AI, perbaikan, serta alasan keputusan teknis Anda di docs/.
+- ![Langkah](screenshot/30.png)
+- ![Langkah](screenshot/31.png)
+- ![Langkah](screenshot/32.png)
+
+7. Push ke repository portfolio pada folder 04-week-4-networking-rest-api/ dengan struktur lib/, test/, docs/, README.md, dan screenshots/. README menjelaskan tujuan, fitur utama, stack teknologi, cara menjalankan, dan hasil yang dicapai.
+- ![Langkah](screenshot/33.png)
+- ![Langkah](screenshot/34.png)
