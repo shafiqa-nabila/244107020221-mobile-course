@@ -119,4 +119,4 @@ Bangun aplikasi Offline Notes sebagai tugas minggu ini (kembangkan project codel
 6. Kerjakan bagian AI Challenge dan dokumentasikan prompt, tabel perbandingan storage, keputusan final, serta alasan teknis Anda di docs/.
 7. Push ke repository portfolio pada folder 05-week-5-local-storage-offline-first/ dengan struktur lib/, test/, docs/, README.md, dan screenshots/. README menjelaskan 
 tujuan, fitur utama, stack teknologi, cara menjalankan, dan hasil yang dicapai.
-- 
+- ![Langkah](screenshot/14.png)
