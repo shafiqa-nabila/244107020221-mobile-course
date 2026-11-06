@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 import '../../../../core/format.dart';
 import '../providers/notes_providers.dart';
 
@@ -24,9 +25,7 @@ class NotesPage extends ConsumerWidget {
             itemBuilder: (context, index) {
               final note = notes[index];
               return ListTile(
-                leading: Icon(
-                  note.dirty ? Icons.cloud_off : Icons.cloud_done,
-                ),
+                leading: Icon(note.dirty ? Icons.cloud_off : Icons.cloud_done),
                 title: Text(note.title),
                 subtitle: Text(formatDate(note.updatedAt)),
               );

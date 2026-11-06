@@ -1,1 +1,0 @@
-![Langkah](screenshot/13.png)

@@ -1,11 +1,12 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+
 import '../../../../core/failures.dart';
 import '../../domain/entities/auth_session.dart';
 import '../../domain/repositories/auth_repository.dart';
 
 class AuthRepositoryImpl implements AuthRepository {
   AuthRepositoryImpl({FlutterSecureStorage? storage})
-      : _storage = storage ?? const FlutterSecureStorage();
+    : _storage = storage ?? const FlutterSecureStorage();
 
   final FlutterSecureStorage _storage;
   static const _accessKey = 'access_token';
@@ -38,11 +39,16 @@ class AuthRepositoryImpl implements AuthRepository {
   }
 
   @override
-  Future<({String? token, Failure? failure})> refresh(String refreshToken) async {
+  Future<({String? token, Failure? failure})> refresh(
+    String refreshToken,
+  ) async {
     try {
       await Future.delayed(const Duration(milliseconds: 300));
       if (refreshToken.isEmpty) {
-        return (token: null, failure: const LocalFailure('Refresh token hilang'));
+        return (
+          token: null,
+          failure: const LocalFailure('Refresh token hilang'),
+        );
       }
       final renewed = 'mock-access-${DateTime.now().millisecondsSinceEpoch}';
       await _storage.write(key: _accessKey, value: renewed);

@@ -1,4 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 import '../../../../data/local/db.dart';
 import '../../data/repositories/note_repository_impl.dart';
 import '../../domain/entities/note.dart';
@@ -24,7 +25,7 @@ final addNoteProvider = Provider<AddNote>((ref) {
 final notesProvider = FutureProvider<List<Note>>((ref) async {
   final result = await ref.watch(getNotesProvider).call();
   if (result.failure != null) {
-    throw result.failure!;     
+    throw result.failure!;
   }
   return result.notes;
 });
